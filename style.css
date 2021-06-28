@@ -1,0 +1,198 @@
+html {
+    height: 100%;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+/** Navigation Bar **/
+#nav {
+    display:grid;
+    grid-template-columns: 60px 60px 1fr 60px 60px 60px;
+    grid-template-areas: "about store . gmail images apps-logo login-logo"
+}
+
+#about {
+    justify-self: center;
+    align-self: center;
+    grid-area: about;
+    color:#222;
+}
+#about:hover{
+    text-decoration: underline;
+}
+#store {
+    justify-self: center;
+    align-self: center;
+    grid-area: store;
+    color:#222;
+}
+#store:hover{
+    text-decoration: underline;
+}
+#gmail {
+    justify-self: center;
+    align-self: center;
+    grid-area: gmail;
+    color:#222;
+}
+#gmail:hover{
+    text-decoration: underline;
+}
+#images {
+    justify-self: center;
+    align-self: center;
+    grid-area: images;
+    color:#222;
+}
+#images:hover{
+    text-decoration: underline;
+}
+#apps-logo {
+    justify-self: center;
+    align-self: center;
+    grid-area: apps-logo;
+    color:#222;
+}
+
+#login-logo {
+    justify-self: center;
+    align-self: center;
+    grid-area: login-logo;
+    color:#222;
+}
+
+/** Main **/
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 250px 70px 70px 250px;
+    grid-template-areas:
+    ". google-logo ."
+    ". search ."
+    ". flexbox."
+}
+
+#google-logo {
+    justify-self: center;
+    align-self: end;
+    grid-area: google-logo;
+
+}
+#search {
+    align-self: center;
+    grid-area: search;
+    height: 30px;
+    border: 1px solid #d8dadd;
+    border-radius: 25px;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px #d8dadd;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#search-button {
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: #f2f2f2;
+    color: 5F6368;
+    border-radius: 4px;
+    padding: 9px 17px 9px 17px;
+    cursor: pointer;
+}
+
+#lucky-button {
+    justify-self: center;
+    align-self: center;
+    border: none;
+    background-color: #f2f2f2;
+    color: 5F6368;
+    border-radius: 4px;
+    padding: 9px 17px 9px 17px;
+    cursor: pointer;
+}
+#search-button:hover {
+    box-shadow: 1px 1px 5px #d8dadd;
+}
+#lucky-button:hover {
+    box-shadow: 1px 1px 5px #d8dadd;
+}
+
+/** Footer **/
+#footer {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    grid-template-columns: 100px 100px 140px 1fr 80px 80px 80px;
+    grid-template-areas: "advertising business how-search-works . privacy terms settings"
+}
+
+#advertising {
+    grid-area: advertising;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#advertising:hover{
+    text-decoration: underline;
+}
+#business {
+    grid-area: business;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#business:hover{
+    text-decoration: underline;
+}
+#how-search-works {
+    grid-area: how-search-works;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#how-search-works:hover{
+    text-decoration: underline;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#privacy:hover{
+    text-decoration: underline;
+}
+#terms {
+    grid-area: terms;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#terms:hover{
+    text-decoration: underline;
+}
+#settings {
+    grid-area: settings;
+    justify-self: center;
+    align-self: center;
+    color: #5f6368;
+}
+#settings:hover{
+    text-decoration: underline;
+}
