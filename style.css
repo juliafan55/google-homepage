@@ -66,7 +66,6 @@ a {
     grid-area: login-logo;
     color:#222;
 }
-
 /** Main **/
 #main {
     display: grid;
@@ -75,7 +74,7 @@ a {
     grid-template-areas:
     ". google-logo ."
     ". search ."
-    ". flexbox."
+    ". flexbox ."
 }
 
 #google-logo {
@@ -85,11 +84,16 @@ a {
 
 }
 #search {
+    display: grid;
     align-self: center;
     grid-area: search;
-    height: 30px;
+    height: 40px;
     border: 1px solid #d8dadd;
     border-radius: 25px;
+    text-indent: 33px;
+    background-image: url(images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
 }
 #search:hover {
     box-shadow: 1px 1px 5px #d8dadd;
@@ -104,9 +108,9 @@ a {
 #search-button {
     justify-self: center;
     align-self: center;
-    border: none;
+    border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
-    color: 5F6368;
+    color: #5F6368;
     border-radius: 4px;
     padding: 9px 17px 9px 17px;
     cursor: pointer;
@@ -115,18 +119,20 @@ a {
 #lucky-button {
     justify-self: center;
     align-self: center;
-    border: none;
+    border: 1px solid #f2f2f2;
     background-color: #f2f2f2;
-    color: 5F6368;
+    color: #5F6368;
     border-radius: 4px;
     padding: 9px 17px 9px 17px;
     cursor: pointer;
 }
 #search-button:hover {
     box-shadow: 1px 1px 5px #d8dadd;
+    border: 1px solid #b2b7bb;
 }
 #lucky-button:hover {
     box-shadow: 1px 1px 5px #d8dadd;
+    border: 1px solid #b2b7bb;
 }
 
 /** Footer **/
